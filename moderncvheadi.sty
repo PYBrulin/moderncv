@@ -63,7 +63,7 @@
 \@initializelength{\quotewidth}
 \@initializelength{\makecvheadnamewidth}% optional makecvheadname width to force a certain width (if set/remains to 0pt, the width is calculated automatically)
 \renewcommand*{\recomputecvheadlengths}{%
-  \setlength{\quotewidth}{0.65\textwidth}}
+  \setlength{\quotewidth}{0.85\textwidth}}
 
 % commands
 \renewcommand*{\makecvhead}{%
@@ -143,13 +143,13 @@
   \ifthenelse{\isundefined{\@quote}}%
     {\vspace{2.5em}}%
     {%
-      \\[2.5em]%
+      \\[1em]%
       {%
         \centering%
         \begin{minipage}{\quotewidth}%
           \centering%
           \quotestyle{\@quote}%
-        \end{minipage}\\[2.5em]}}%
+        \end{minipage}\\[2em]}}%
   \par}% to avoid weird spacing bug at the first section if no blank line is left after \makecvhead
 
 
